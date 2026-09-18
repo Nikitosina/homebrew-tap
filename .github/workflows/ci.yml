@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  test-formula:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Tap working tree
+        run: brew tap --custom-remote Nikitosina/tap "$GITHUB_WORKSPACE"
+
+      - name: Audit formula
+        run: brew audit --strict Nikitosina/tap/keyboard-ext-ax
+
+      - name: Install formula
+        run: brew install --build-from-source Nikitosina/tap/keyboard-ext-ax
+
+      - name: Test formula
+        run: brew test Nikitosina/tap/keyboard-ext-ax

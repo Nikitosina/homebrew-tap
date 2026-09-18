@@ -7,8 +7,8 @@ class KeyboardExtAx < Formula
   sha256 "c58e3a7a7d3f94175ed8d15fc62ee2c798a6ad3691e07cf0b19db66d563c267d"
   license "MIT"
 
-  depends_on :macos
   depends_on "cryptography" => :no_linkage
+  depends_on :macos
   depends_on "pydantic" => :no_linkage
   depends_on "python@3.14"
   depends_on "rpds-py" => :no_linkage
