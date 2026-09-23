@@ -3,8 +3,8 @@ class KeyboardExtAx < Formula
 
   desc "Accessibility snapshots of active iOS keyboard extensions in Simulator"
   homepage "https://github.com/Nikitosina/KeyboardExtAX"
-  url "https://files.pythonhosted.org/packages/5f/04/084b1a33d9276a1c167ba2ac482fb2b9a0da1cfd833525e349fe06b608c0/keyboard_ext_ax-0.1.1.tar.gz"
-  sha256 "c58e3a7a7d3f94175ed8d15fc62ee2c798a6ad3691e07cf0b19db66d563c267d"
+  url "https://files.pythonhosted.org/packages/f0/4a/78627d0d99eee4eaca4fa43c80a621a1e11d63e5831fb00830b0c3f66546/keyboard_ext_ax-0.1.2.tar.gz"
+  sha256 "4cf07a2f02a6fb39668f886ee652cbd3e9b9fc25c1042acb463aca6734f69e2e"
   license "MIT"
 
   depends_on "cryptography" => :no_linkage
